@@ -8,11 +8,11 @@ import zipfile
 
 # 1. The files and dir to be backed up are
 # specified in a list
-source = ["C:/Python27/Python Projects"]
+source = [''' insert your directory here!''']
 
 # 2. The backup must be stored in a
 # main backup directory
-target_dir = 'D:/Computer Science/bkup'
+target_dir = ''' insert your directory here!'''
 
 # 3. create backup dir if not present
 if not os.path.exists(target_dir):
