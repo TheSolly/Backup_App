@@ -3,7 +3,7 @@ import time
 import zipfile
 
 
-"""This is an app to backup a specified list of directories"""
+"""This is a script to backup a specified list of directories"""
 
 
 # 1. The files and dir to be backed up are
@@ -38,11 +38,10 @@ else:
 # Create the subdirectory if it isn't already there
 if not os.path.exists(today):
     os.makedirs(today)
-    print ("Successfully created direcotry", today)
+    print ("Successfully created directory", today)
 
 
 # 6. We us the zip command to put the files in a zip archive
-# refer to dir_manipulation for more info about this step
 zip_command = zipfile.ZipFile(target, mode="w")
 for i in source:
     for roots, subdirs, files in os.walk(i):
